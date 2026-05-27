@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おくってフォトブック</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =============================
+       タイトル画像
+  ============================= -->
+  <section class="section-hero">
+    <img src="images/google_01.png" alt="あなたが残してくれたもの" class="hero-img">
+  </section>
+
+  <!-- =============================
+       スライダー１
+  ============================= -->
+  <section class="section-slider slider-a">
+    <div class="slider-wrap" id="sliderA">
+      <div class="slider-track" id="sliderA-track">
+        <!-- JS でクローンを含めて生成 -->
+      </div>
+      <div class="slider-dots" id="sliderA-dots"></div>
+    </div>
+  </section>
+
+  <!-- =============================
+       サービス概要
+  ============================= -->
+  <section class="section-meta">
+    <img src="images/google_02.png" alt="サービス概要" class="meta-img">
+  </section>
+
+  <!-- =============================
+       スライダー２
+  ============================= -->
+  <section class="section-slider slider-b">
+    <div class="slider-wrap" id="sliderB">
+      <div class="slider-track" id="sliderB-track">
+        <!-- JS でクローンを含めて生成 -->
+      </div>
+      <div class="slider-dots" id="sliderB-dots"></div>
+    </div>
+  </section>
+
+  <!-- =============================
+       サービス概要２
+  ============================= -->
+  <section class="section-meta">
+    <img src="images/google_03.png" alt="サービス概要2" class="meta-img">
+  </section>
+
+  <!-- =============================
+       コース
+  ============================= -->
+  <section class="section-meta">
+    <img src="images/google_04.jpg" alt="コース" class="meta-img">
+  </section>
+
+  <!-- =============================
+       仕上がりタイプ
+  ============================= -->
+  <section class="section-meta">
+    <img src="images/google_05.jpg" alt="仕上がりタイプ" class="meta-img">
+  </section>
+
+  <!-- =============================
+       事例紹介
+  ============================= -->
+  <section class="section-meta">
+    <img src="images/google_06.jpg" alt="事例紹介" class="meta-img">
+  </section>
+
+  <!-- =============================
+       よくある質問
+  ============================= -->
+  <section class="section-meta">
+    <img src="images/google_07.jpg" alt="よくある質問1" class="meta-img">
+    <img src="images/google_08.jpg" alt="よくある質問2" class="meta-img">
+  </section>
+
+  <!-- =============================
+       固定フッターナビ
+  ============================= -->
+  <div class="fixed-footer" id="fixedFooter">
+    <img src="images/underver.png" alt="ナビゲーション" class="fixed-footer-img">
+  </div>
+
+  <!-- 価格表ボタン（固定・フッター上に独立配置） -->
+  <button class="btn-kakaku" id="btnKakaku" aria-label="価格表を見る">価格表</button>
+
+  <!-- 固定フッター分の余白 -->
+  <div class="fixed-footer-spacer"></div>
+
+  <!-- =============================
+       価格表モーダル（下からスライドアップ）
+  ============================= -->
+  <div class="kakaku-overlay" id="kakakuOverlay"></div>
+  <div class="kakaku-sheet" id="kakakuSheet">
+    <button class="kakaku-close" id="kakakuClose" aria-label="閉じる">✕</button>
+    <div class="kakaku-scroll">
+      <img src="images/kakaku.png" alt="料金表" class="kakaku-img">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
