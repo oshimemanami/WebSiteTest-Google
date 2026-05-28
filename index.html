@@ -9,88 +9,140 @@
 <body>
 
   <!-- =============================
+       スタート画像
+  ============================= -->
+  <section class="section-hero">
+    <img src="images/google_start.png" alt="おくってフォトブック" class="hero-img">
+  </section>
+
+  <!-- =============================
        タイトル画像
   ============================= -->
   <section class="section-hero">
-    <img src="images/google_01.png" alt="あなたが残してくれたもの" class="hero-img">
+    <img src="images/google_01.png" alt="タイトル" class="hero-img">
   </section>
 
   <!-- =============================
        スライダー１
   ============================= -->
   <section class="section-slider slider-a">
-    <div class="slider-wrap" id="sliderA">
-      <div class="slider-track" id="sliderA-track">
-        <!-- JS でクローンを含めて生成 -->
+    <div class="slider-outer">
+      <div class="slider-wrap" id="sliderA">
+        <div class="slider-track" id="sliderA-track"></div>
       </div>
-      <div class="slider-dots" id="sliderA-dots"></div>
+      <button class="slider-btn slider-btn-prev" id="sliderA-prev" aria-label="前へ">&#10094;</button>
+      <button class="slider-btn slider-btn-next" id="sliderA-next" aria-label="次へ">&#10095;</button>
     </div>
+    <div class="slider-dots" id="sliderA-dots"></div>
   </section>
 
   <!-- =============================
-       サービス概要
+       サービス概要（google_02）
   ============================= -->
   <section class="section-meta">
     <img src="images/google_02.png" alt="サービス概要" class="meta-img">
+    <!-- 横並びボタン -->
+    <div class="btn-row">
+      <a href="https://okutte.jp/soudanmadoguchi.html" class="btn-row-link">
+        <img src="images/google_02a.png" alt="私の場合を相談する" class="btn-row-img">
+      </a>
+      <a href="https://okutte.jp/kakaku.html" class="btn-row-link">
+        <img src="images/google_02b.png" alt="料金表を見る" class="btn-row-img">
+      </a>
+    </div>
+    <img src="images/google_02c.png" alt="サービス概要補足" class="meta-img">
   </section>
 
   <!-- =============================
        スライダー２
   ============================= -->
   <section class="section-slider slider-b">
-    <div class="slider-wrap" id="sliderB">
-      <div class="slider-track" id="sliderB-track">
-        <!-- JS でクローンを含めて生成 -->
+    <div class="slider-outer">
+      <div class="slider-wrap" id="sliderB">
+        <div class="slider-track" id="sliderB-track"></div>
       </div>
-      <div class="slider-dots" id="sliderB-dots"></div>
+      <button class="slider-btn slider-btn-prev" id="sliderB-prev" aria-label="前へ">&#10094;</button>
+      <button class="slider-btn slider-btn-next" id="sliderB-next" aria-label="次へ">&#10095;</button>
     </div>
+    <div class="slider-dots" id="sliderB-dots"></div>
   </section>
 
   <!-- =============================
-       サービス概要２
+       google_03・04
   ============================= -->
-  <section class="section-meta">
-    <img src="images/google_03.png" alt="サービス概要2" class="meta-img">
+  <section class="section-meta" id="section-google03">
+    <img src="images/google_03.png" alt="google_03" class="meta-img">
+    <img src="images/google_04.png" alt="google_04" class="meta-img">
+    <!-- 横並びボタン（リンク先同じ） -->
+    <div class="btn-row">
+      <a href="https://okutte.jp/soudanmadoguchi.html" class="btn-row-link">
+        <img src="images/google_02a.png" alt="私の場合を相談する" class="btn-row-img">
+      </a>
+      <a href="https://okutte.jp/kakaku.html" class="btn-row-link">
+        <img src="images/google_02b.png" alt="料金表を見る" class="btn-row-img">
+      </a>
+    </div>
+    <a href="https://okutte.jp/" class="meta-link">
+      <img src="images/google_04a.png" alt="google_04a" class="meta-img">
+    </a>
+    <a href="https://okutte.jp/" class="meta-link">
+      <img src="images/google_04b.png" alt="google_04b" class="meta-img">
+    </a>
+    <img src="images/google_05.png" alt="google_05" class="meta-img">
   </section>
 
   <!-- =============================
-       コース
+       google_06・07・08
   ============================= -->
-  <section class="section-meta">
-    <img src="images/google_04.jpg" alt="コース" class="meta-img">
+  <section class="section-meta" id="section-google06">
+    <img src="images/google_06.png" alt="google_06" class="meta-img">
+    <img src="images/google_07.png" alt="google_07" class="meta-img">
+    <img src="images/google_08.png" alt="google_08" class="meta-img">
+    <!-- google_08a：タップで google_08b がすっと展開 -->
+    <div class="faq-accordion" id="faqAccordion">
+      <div class="faq-question" id="faqQuestion">
+        <img src="images/google_08a.png" alt="Q" class="meta-img faq-q-img">
+        <span class="faq-arrow" id="faqArrow">&#8964;</span>
+      </div>
+      <div class="faq-answer" id="faqAnswer">
+        <img src="images/google_08b.png" alt="A" class="meta-img">
+      </div>
+    </div>
+    <img src="images/google_08c.png" alt="google_08c" class="meta-img">
+    <!-- 横並びボタン -->
+    <div class="btn-row">
+      <a href="https://okutte.jp/soudanmadoguchi.html" class="btn-row-link">
+        <img src="images/google_02a.png" alt="私の場合を相談する" class="btn-row-img">
+      </a>
+      <a href="https://okutte.jp/kakaku.html" class="btn-row-link">
+        <img src="images/google_02b.png" alt="料金表を見る" class="btn-row-img">
+      </a>
+    </div>
+    <!-- google_04b → https://okutte.jp/ -->
+    <a href="https://okutte.jp/" class="meta-link">
+      <img src="images/google_04b.png" alt="google_04b" class="meta-img">
+    </a>
   </section>
 
   <!-- =============================
-       仕上がりタイプ
+       google_09
   ============================= -->
   <section class="section-meta">
-    <img src="images/google_05.jpg" alt="仕上がりタイプ" class="meta-img">
-  </section>
-
-  <!-- =============================
-       事例紹介
-  ============================= -->
-  <section class="section-meta">
-    <img src="images/google_06.jpg" alt="事例紹介" class="meta-img">
-  </section>
-
-  <!-- =============================
-       よくある質問
-  ============================= -->
-  <section class="section-meta">
-    <img src="images/google_07.jpg" alt="よくある質問1" class="meta-img">
-    <img src="images/google_08.jpg" alt="よくある質問2" class="meta-img">
+    <img src="images/google_09.png" alt="google_09" class="meta-img">
   </section>
 
   <!-- =============================
        固定フッターナビ
   ============================= -->
   <div class="fixed-footer" id="fixedFooter">
-    <img src="images/underver.png" alt="ナビゲーション" class="fixed-footer-img">
+    <img src="images/underver.png" alt="ナビゲーション" class="fixed-footer-img" usemap="#footerMap" id="footerImg">
+    <map name="footerMap">
+      <area shape="rect" coords="0,0,0,0" href="#section-google03" alt="3つのコース" id="areaCorner">
+      <area shape="rect" coords="0,0,0,0" href="#section-google06" alt="仕上がりタイプ" id="areaFinish">
+      <area shape="rect" coords="0,0,0,0" href="#section-google06" alt="事例紹介" id="areaCase">
+      <area shape="rect" coords="0,0,0,0" href="https://okutte.jp/soudanmadoguchi.html" alt="お問い合わせ" id="areaContact">
+    </map>
   </div>
-
-  <!-- 価格表ボタン（固定・フッター上に独立配置） -->
-  <button class="btn-kakaku" id="btnKakaku" aria-label="価格表を見る">価格表</button>
 
   <!-- 固定フッター分の余白 -->
   <div class="fixed-footer-spacer"></div>
@@ -102,7 +154,14 @@
   <div class="kakaku-sheet" id="kakakuSheet">
     <button class="kakaku-close" id="kakakuClose" aria-label="閉じる">✕</button>
     <div class="kakaku-scroll">
-      <img src="images/kakaku.png" alt="料金表" class="kakaku-img">
+      <img src="images/kakaku_01.png" alt="料金表1" class="kakaku-img">
+      <a href="https://okutte.jp/kakaku.html" class="meta-link">
+        <img src="images/kakaku_02.png" alt="料金表2" class="kakaku-img">
+      </a>
+      <img src="images/kakaku_03.png" alt="料金表3" class="kakaku-img">
+      <a href="https://okutte.jp/kakaku.html" class="meta-link">
+        <img src="images/kakaku_02.png" alt="料金表2" class="kakaku-img">
+      </a>
     </div>
   </div>
 
