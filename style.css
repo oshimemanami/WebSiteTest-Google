@@ -221,9 +221,11 @@ body {
 ============================= */
 .btn-row {
   display: flex;
-  width: 100%;
+  width: 90%;
   gap: 12px;
-  padding: 0 12px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 0;
 }
 
@@ -656,6 +658,9 @@ body.kakaku-open {
   padding-top: 51%; /* 16:9 黒帯調整 */
   overflow: hidden;
   border: 1px solid #000;
+  outline: 1px solid #000;
+  -webkit-box-shadow: 0 0 0 1px #000;
+  box-shadow: 0 0 0 1px #000;
 }
 
 .video-wrap iframe {
