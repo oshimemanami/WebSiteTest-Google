@@ -373,7 +373,7 @@ function initFooterNav() {
       setTimeout(() => {
         const target = document.querySelector(targetId);
         if (target) target.scrollIntoView({ behavior: 'smooth' });
-      }, 450);
+      }, 250);
     } else {
       const target = document.querySelector(targetId);
       if (target) target.scrollIntoView({ behavior: 'smooth' });
