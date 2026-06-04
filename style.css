@@ -282,10 +282,8 @@ body {
 }
 
 .faq-q-img {
-  width: 90%;
+  width: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .faq-question {
