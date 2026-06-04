@@ -294,7 +294,7 @@ function initKakakuModal() {
   const overlay  = document.getElementById('kakakuOverlay');
   const closeBtn = document.getElementById('kakakuClose');
 
-  ['btnKakaku04b', 'btnKakaku06b', 'btnKakaku14b'].forEach(id => {
+  ['btnKakaku04b', 'btnKakaku06b', 'btnKakakuMid', 'btnKakaku14b'].forEach(id => {
     const btn = document.getElementById(id);
     if (btn) btn.addEventListener('click', (e) => {
       e.preventDefault();
