@@ -79,6 +79,7 @@ body {
 .sp-20  { margin-bottom: var(--space-20); }
 .sp-40  { margin-bottom: var(--space-40); }
 .sp-60  { margin-bottom: var(--space-60); }
+.sp-80  { margin-bottom: 80px; }
 .sp-100 { margin-bottom: var(--space-100); }
 .sp-130 { margin-bottom: var(--space-130); }
 
@@ -106,7 +107,8 @@ body {
 .meta-gif-wrap.sp-60,  .faq-accordion.sp-60,  .meta-narrow.sp-60  { margin-bottom: var(--space-60); }
 
 .btn-row.sp-100, .meta-link.sp-100, .section-slider.sp-100,
-.meta-gif-wrap.sp-100, .faq-accordion.sp-100, .meta-narrow.sp-100 { margin-bottom: var(--space-100); }
+.meta-gif-wrap.sp-100, .faq-accordion.sp-100, .meta-narrow.sp-80  { margin-bottom: 80px; }
+.sp-100 { margin-bottom: var(--space-100); }
 
 .btn-row.sp-130, .meta-link.sp-130, .section-slider.sp-130,
 .meta-gif-wrap.sp-130, .faq-accordion.sp-130, .meta-narrow.sp-130 { margin-bottom: var(--space-130); }
@@ -653,6 +655,7 @@ body.kakaku-open {
   position: relative;
   padding-top: 51%; /* 16:9 黒帯調整 */
   overflow: hidden;
+  border: 1px solid #000;
 }
 
 .video-wrap iframe {
