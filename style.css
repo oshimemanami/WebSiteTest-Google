@@ -660,11 +660,12 @@ body.kakaku-open {
    YouTube動画埋め込み
 ============================= */
 .video-wrap {
-  width: 90%;
+  width: 90vw;
+  max-width: 576px; /* 640px × 90% */
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding-top: 51%; /* 16:9 */
+  padding-top: 50.625vw; /* 90vw × 56.25% */
   overflow: hidden;
   border: 1px solid #000;
   outline: 1px solid #000;
@@ -672,11 +673,17 @@ body.kakaku-open {
   box-shadow: 0 0 0 1px #000;
 }
 
+@media (min-width: 641px) {
+  .video-wrap {
+    padding-top: 324px; /* 576px × 56.25% */
+  }
+}
+
 .video-wrap iframe {
   position: absolute;
   top: 0;
-  left: -5.56%;
-  width: 111.11%;
+  left: -8%;
+  width: 116%;
   height: 100%;
   border: none;
 }
