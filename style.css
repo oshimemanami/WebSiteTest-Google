@@ -80,6 +80,7 @@ body {
 .sp-40  { margin-bottom: var(--space-40); }
 .sp-60  { margin-bottom: var(--space-60); }
 .sp-80  { margin-bottom: 80px; }
+.sp-80  { margin-bottom: 80px; }
 .sp-100 { margin-bottom: var(--space-100); }
 .sp-130 { margin-bottom: var(--space-130); }
 
@@ -108,6 +109,7 @@ body {
 
 .btn-row.sp-100, .meta-link.sp-100, .section-slider.sp-100,
 .meta-gif-wrap.sp-100, .faq-accordion.sp-100, .meta-narrow.sp-80  { margin-bottom: 80px; }
+.sp-80  { margin-bottom: 80px; }
 .sp-100 { margin-bottom: var(--space-100); }
 
 .btn-row.sp-130, .meta-link.sp-130, .section-slider.sp-130,
@@ -155,6 +157,13 @@ body {
 .meta-05a-narrow > img {
   width: 100%;
   display: block;
+}
+
+.meta-img-90 {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .meta-img-90 {
