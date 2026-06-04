@@ -157,6 +157,13 @@ body {
   display: block;
 }
 
+.meta-img-90 {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* =============================
    フッターリンクエリア（meta_15a代替）
@@ -657,7 +664,7 @@ body.kakaku-open {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding-top: 45.9%; /* 51% × 90% */
+  padding-top: 51%; /* 16:9 */
   overflow: hidden;
   border: 1px solid #000;
   outline: 1px solid #000;
