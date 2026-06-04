@@ -294,6 +294,16 @@ function initKakakuModal() {
   const overlay  = document.getElementById('kakakuOverlay');
   const closeBtn = document.getElementById('kakakuClose');
 
+  // モーダル内リンク：閉じてから移動
+  document.querySelectorAll('.kakaku-area').forEach(area => {
+    area.addEventListener('click', (e) => {
+      e.preventDefault();
+      const href = area.getAttribute('href');
+      closeKakakuModal();
+      setTimeout(() => { window.open(href, '_blank'); }, 400);
+    });
+  });
+
   ['btnKakaku04b', 'btnKakaku06b', 'btnKakakuMid', 'btnKakaku14b'].forEach(id => {
     const btn = document.getElementById(id);
     if (btn) btn.addEventListener('click', (e) => {
@@ -354,11 +364,26 @@ function initFooterNav() {
   else footerImg.addEventListener('load', setupMap);
   window.addEventListener('resize', setupMap);
 
+  // モーダルを閉じてからスクロール
+  function closeAndScroll(targetId) {
+    const isModalOpen = document.getElementById('kakakuSheet') &&
+      document.getElementById('kakakuSheet').classList.contains('is-active');
+    if (isModalOpen) {
+      closeKakakuModal();
+      setTimeout(() => {
+        const target = document.querySelector(targetId);
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      }, 450);
+    } else {
+      const target = document.querySelector(targetId);
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   document.querySelectorAll('map area[href^="#"]').forEach(area => {
     area.addEventListener('click', (e) => {
       e.preventDefault();
-      const target = document.querySelector(area.getAttribute('href'));
-      if (target) target.scrollIntoView({ behavior: 'smooth' });
+      closeAndScroll(area.getAttribute('href'));
     });
   });
 
@@ -374,8 +399,7 @@ function initFooterNav() {
     else                targetId = null;
     if (targetId) {
       e.preventDefault();
-      const target = document.querySelector(targetId);
-      if (target) target.scrollIntoView({ behavior: 'smooth' });
+      closeAndScroll(targetId);
     }
   });
 }
