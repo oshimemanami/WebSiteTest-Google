@@ -653,9 +653,11 @@ body.kakaku-open {
    YouTube動画埋め込み
 ============================= */
 .video-wrap {
-  width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  padding-top: 51%; /* 16:9 黒帯調整 */
+  padding-top: 45.9%; /* 51% × 90% */
   overflow: hidden;
   border: 1px solid #000;
   outline: 1px solid #000;
